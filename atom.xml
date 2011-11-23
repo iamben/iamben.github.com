@@ -4,7 +4,7 @@
   <title><![CDATA[iamben notes bin]]></title>
   <link href="http://iamben.github.com/atom.xml" rel="self"/>
   <link href="http://iamben.github.com/"/>
-  <updated>2011-11-23T15:22:43+08:00</updated>
+  <updated>2011-11-23T15:24:11+08:00</updated>
   <id>http://iamben.github.com/</id>
   <author>
     <name><![CDATA[iamben]]></name>
@@ -60,15 +60,6 @@
 <li><p>Magzine</p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress test]]></title>
-    <link href="http://iamben.github.com/blog/2011/11/23/octopress-test/"/>
-    <updated>2011-11-23T14:44:00+08:00</updated>
-    <id>http://iamben.github.com/blog/2011/11/23/octopress-test</id>
-    <content type="html"><![CDATA[<h1>First octopress test</h1>
 ]]></content>
   </entry>
   
