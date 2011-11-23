@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>iamben notes bin</title>
+  <title>How to enhance research background and knowledge - iamben notes bin</title>
   <meta name="author" content="iamben">
 
   
@@ -22,7 +22,7 @@ SDOL Managemant EndNote No Korean. XD Paper Selection &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://iamben.github.com">
+  <link rel="canonical" href="http://iamben.github.com/blog/2011/11/23/research">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,15 +62,12 @@ SDOL Managemant EndNote No Korean. XD Paper Selection &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/11/23/research/">How to Enhance Research Background and Knowledge</a></h1>
+      <h1 class="entry-title">How to Enhance Research Background and Knowledge</h1>
     
     
       <p class="meta">
@@ -93,7 +90,7 @@ SDOL Managemant EndNote No Korean. XD Paper Selection &hellip;">
   </header>
 
 
-  <div class="entry-content"><h3>Sites</h3>
+<div class="entry-content"><h3>Sites</h3>
 
 <ul>
 <li><p>IEEE Xplore</p></li>
@@ -136,58 +133,16 @@ SDOL Managemant EndNote No Korean. XD Paper Selection &hellip;">
 </ul>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/23/octopress-test/">Octopress Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">iamben</span></span>
 
-<time datetime="2011-11-23T14:44:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>First octopress test</h1>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/23/cassandra-setup/">Cassandra Cluster Setup on FreeBSD</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -199,95 +154,38 @@ SDOL Managemant EndNote No Korean. XD Paper Selection &hellip;">
   
 
 
-<time datetime="2011-11-23T14:44:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2011</time>
-        
-      </p>
+<time datetime="2011-11-23T15:00:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/research/'>research</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>這篇基本上只是最近在 <a href="http://www.freebsd.org" title="FreeBSD">FreeBSD</a> 玩 <a href="http://cassandra.apache.org" title="Cassandra">Cassandra</a> 的一些雜記</p>
-
-<h3>Installation</h3>
-
-<h5>databases/cassandra</h5>
-
-<p>ports 做得還不錯, 不過下一版才會有 rc script, 現在還是只能手動跑</p>
-
-<p>基本上沒有什麼要注意的, 裝完之後在 <em>/usr/local/share/cassandra</em> 下可以找到</p>
-
-<p>可以整包帶著走(dependency 應該只有 java 1.6+)</p>
-
-<h3>Node Setup</h3>
-
-<h5>儲存位置</h5>
-
-<p>要修改 data_file_directories, commitlog_directory, commitlog_directory</p>
-
-<h5>Listen Address</h5>
-
-<p>各 node 的 listen address 要設成 public ip</p>
-
-<p>不可以使用 wildcard</p>
-
-<h5>Database Authentication</h5>
-
-<ul>
-<li><p>將 $CASSANDRA/conf 下的 {passwd, access}.properties 寫好</p></li>
-<li><p>將 cassandra.yaml 中的 authenticator 改成:</p></li>
-</ul>
-
-
-<p> <pre>
-authenticator: org.apache.cassandra.auth.SimpleAuthenticator
- </pre></p>
-
-<ul>
-<li>在 cassandra-env.sh 中加入 passwd / access 位置</li>
-</ul>
-
-
-<p> <pre>
-JVM_OPTS="$JVM_OPTS -Daccess.properties=conf/access.properties"
-JVM_OPTS="$JVM_OPTS -Dpasswd.properties=conf/passwd.properties"
- </pre></p>
-
-<h5>JMX Authentication</h5>
-
-<ul>
-<li><p>將 $CASSANDRA/conf 下的 jmxremote.{password, access} 寫好</p></li>
-<li><p>在 cassandra-env.sh 中加入 passwd / access 位置</p></li>
-</ul>
-
-
-<p> <pre>
-JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.authenticate=true"
-JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.password.file=conf/jmxremote.password"
-JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.access.file=conf/jmxremote.access"
- </pre></p>
-
-<h5>Token Selection</h5>
-
-<p>要將 keyspace 盡量平均給各 node, 可以參考 <a href="http://wiki.apache.org/cassandra/Operations#Token_selection" title="Token Selection">Token Selection</a></p>
-
-<h3>Cluster Setup</h3>
-
-<h5>Seed</h5>
-
-<p>將 Seeds 指到第一台 setup 好的 node 即可</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iamben.github.com/blog/2011/11/23/research/" data-via="" data-counturl="http://iamben.github.com/blog/2011/11/23/research/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/11/23/octopress-test/" title="Previous Post: Octopress test">&laquo; Octopress test</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -316,6 +214,7 @@ JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.access.file=conf/jmxremote.ac
 
   
 </aside>
+
 
     </div>
   </div>
