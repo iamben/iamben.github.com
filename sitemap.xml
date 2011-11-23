@@ -1,15 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://iamben.github.com/blog/2011/11/23/cassandra-setup/</loc>
+        <lastmod>2011-11-23T14:55:09+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://iamben.github.com/blog/2011/11/23/octopress-test/</loc>
         <lastmod>2011-11-23T14:45:34+08:00</lastmod>
     </url>
     <url>
         <loc>http://iamben.github.com/blog/archives/</loc>
-        <lastmod>2011-11-23T14:45:34+08:00</lastmod>
+        <lastmod>2011-11-23T14:55:09+08:00</lastmod>
     </url>
     <url>
         <loc>http://iamben.github.com/</loc>
-        <lastmod>2011-11-23T14:45:34+08:00</lastmod>
+        <lastmod>2011-11-23T14:55:09+08:00</lastmod>
     </url>
 </urlset>

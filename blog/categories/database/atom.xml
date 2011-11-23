@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[iamben notes bin]]></title>
-  <link href="http://iamben.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: database | iamben notes bin]]></title>
+  <link href="http://iamben.github.com/blog/categories/database/atom.xml" rel="self"/>
   <link href="http://iamben.github.com/"/>
   <updated>2011-11-23T14:55:30+08:00</updated>
   <id>http://iamben.github.com/</id>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress test]]></title>
-    <link href="http://iamben.github.com/blog/2011/11/23/octopress-test/"/>
-    <updated>2011-11-23T14:44:00+08:00</updated>
-    <id>http://iamben.github.com/blog/2011/11/23/octopress-test</id>
-    <content type="html"><![CDATA[<h1>First octopress test</h1>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cassandra Cluster Setup on FreeBSD]]></title>
