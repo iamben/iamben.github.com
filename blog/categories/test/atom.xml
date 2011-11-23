@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[iamben notes bin]]></title>
-  <link href="http://iamben.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: test | iamben notes bin]]></title>
+  <link href="http://iamben.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://iamben.github.com/"/>
   <updated>2011-11-23T14:49:07+08:00</updated>
   <id>http://iamben.github.com/</id>
